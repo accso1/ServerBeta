@@ -576,3 +576,422 @@ java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
 [08:56:48] [Server thread/INFO]: [AuraSkills] Loaded 6 menus
 [08:56:48] [Server thread/INFO]: Done (22.794s)! For help, type "help"
 [08:56:48] [Server thread/INFO]: Timings Reset
+[09:01:47] [DimensionDataIO - ./world - 0/ERROR]: Could not save data net.minecraft.world.scores.ScoreboardSaveData@2c80d55
+java.nio.file.NoSuchFileException: ./world/data/scoreboard.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:01:47] [DimensionDataIO - ./world - 0/ERROR]: Could not save data net.minecraft.world.entity.raid.Raids@6f789d4
+java.nio.file.NoSuchFileException: ./world/data/raids.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:01:47] [Server thread/ERROR]: Failed to save level ./world
+java.nio.file.NoSuchFileException: ./world/level7392641002149847583.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:657) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.create(TempFileHelper.java:136) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:159) ~[?:?]
+	at java.base/java.nio.file.Files.createTempFile(Files.java:878) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveLevelData(LevelStorageSource.java:615) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:608) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.level.ServerLevel.saveIncrementally(ServerLevel.java:1383) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1614) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1300) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:01:47] [Server thread/ERROR]: Failed to save level ./world_nether
+java.nio.file.NoSuchFileException: ./world_nether/level10448313978433233686.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:657) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.create(TempFileHelper.java:136) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:159) ~[?:?]
+	at java.base/java.nio.file.Files.createTempFile(Files.java:878) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveLevelData(LevelStorageSource.java:615) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:608) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.level.ServerLevel.saveIncrementally(ServerLevel.java:1383) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1614) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1300) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:01:47] [DimensionDataIO - ./world_nether/DIM-1 - 0/ERROR]: Could not save data net.minecraft.world.entity.raid.Raids@a9cbc59
+java.nio.file.NoSuchFileException: ./world_nether/DIM-1/data/raids.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:01:47] [DimensionDataIO - ./world_the_end/DIM1 - 0/ERROR]: Could not save data net.minecraft.world.entity.raid.Raids@489c83e0
+java.nio.file.NoSuchFileException: ./world_the_end/DIM1/data/raids_end.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:01:47] [Server thread/ERROR]: Failed to save level ./world_the_end
+java.nio.file.NoSuchFileException: ./world_the_end/level17771302723286393816.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:657) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.create(TempFileHelper.java:136) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:159) ~[?:?]
+	at java.base/java.nio.file.Files.createTempFile(Files.java:878) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveLevelData(LevelStorageSource.java:615) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:608) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.level.ServerLevel.saveIncrementally(ServerLevel.java:1383) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1614) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1300) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: Stopping the server
+[09:03:21] [Server thread/INFO]: Stopping server
+[09:03:21] [Server thread/INFO]: [Multiverse-SignPortals] Disabling Multiverse-SignPortals v4.2.2
+[09:03:21] [Server thread/INFO]: [Multiverse-SignPortals] - Disabled
+[09:03:21] [Server thread/INFO]: [ChunkyBorder] Disabling ChunkyBorder v1.2.13
+[09:03:21] [Server thread/WARN]: [ChunkyBorder] Unable to save borders.
+[09:03:21] [Server thread/INFO]: [SmoothTimber] Disabling SmoothTimber v1.27.0
+[09:03:21] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
+[09:03:21] [Server thread/WARN]: java.io.FileNotFoundException: plugins/PowerRanks/ranks.yml (No such file or directory)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:325)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.provided.YAMLStorageManager.saveRanks(YAMLStorageManager.java:228)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.PowerStorageManager.saveAll(PowerStorageManager.java:79)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.cache.CacheManager.save(CacheManager.java:166)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.onDisable(PowerRanks.java:268)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:03:21] [Server thread/WARN]: java.io.FileNotFoundException: plugins/PowerRanks/players.yml (No such file or directory)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:325)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.provided.YAMLStorageManager.savePlayers(YAMLStorageManager.java:258)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.PowerStorageManager.saveAll(PowerStorageManager.java:80)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.cache.CacheManager.save(CacheManager.java:166)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.onDisable(PowerRanks.java:268)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:03:21] [Server thread/WARN]: java.io.FileNotFoundException: plugins/PowerRanks/config.yml (No such file or directory)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:325)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.provided.YAMLConfigManager.save(YAMLConfigManager.java:130)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.saveConfigurationFiles(PowerRanks.java:297)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.onDisable(PowerRanks.java:270)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:03:21] [Server thread/WARN]: java.io.FileNotFoundException: plugins/PowerRanks/lang.yml (No such file or directory)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:325)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.provided.YAMLConfigManager.save(YAMLConfigManager.java:130)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.cache.LanguageManager.save(LanguageManager.java:145)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.saveConfigurationFiles(PowerRanks.java:304)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.onDisable(PowerRanks.java:270)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:03:21] [Server thread/WARN]: java.io.FileNotFoundException: plugins/PowerRanks/usertags.yml (No such file or directory)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:325)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.provided.YAMLConfigManager.save(YAMLConfigManager.java:130)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.saveConfigurationFiles(PowerRanks.java:311)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.onDisable(PowerRanks.java:270)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:03:21] [Server thread/WARN]: java.io.FileNotFoundException: plugins/PowerRanks/tablist.yml (No such file or directory)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open0(Native Method)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:325)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.common.storage.provided.YAMLConfigManager.save(YAMLConfigManager.java:130)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.saveConfigurationFiles(PowerRanks.java:318)
+[09:03:21] [Server thread/WARN]: 	at PowerRanks.jar//nl.svenar.powerranks.bukkit.PowerRanks.onDisable(PowerRanks.java:270)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161)
+[09:03:21] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541)
+[09:03:21] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349)
+[09:03:21] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[09:03:21] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[09:03:21] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
+[09:03:21] [Server thread/INFO]: [Multiverse-Portals] Disabling Multiverse-Portals v4.2.3
+[09:03:21] [Server thread/INFO]: [ToolStats] Disabling ToolStats v1.7.2
+[09:03:21] [Server thread/INFO]: [DeathChest] Disabling DeathChest v2.2.5
+[09:03:21] [Server thread/ERROR]: [DeathChest] Failed to close the death chest storage
+java.io.IOException: No such file or directory
+	at java.base/java.io.UnixFileSystem.createFileExclusively0(Native Method) ~[?:?]
+	at java.base/java.io.UnixFileSystem.createFileExclusively(UnixFileSystem.java:258) ~[?:?]
+	at java.base/java.io.File.createNewFile(File.java:1045) ~[?:?]
+	at deathchest.jar/com.github.devcyntrix.deathchest.support.storage.YamlStorage.getFile(YamlStorage.java:38) ~[deathchest.jar:?]
+	at deathchest.jar/com.github.devcyntrix.deathchest.support.storage.YamlStorage.close(YamlStorage.java:136) ~[deathchest.jar:?]
+	at deathchest.jar/com.github.devcyntrix.deathchest.DeathChestPlugin.onDisable(DeathChestPlugin.java:183) ~[deathchest.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugins(PaperPluginInstanceManager.java:161) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugins(PaperPluginManagerImpl.java:97) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugins(SimplePluginManager.java:541) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.disablePlugins(CraftServer.java:607) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1042) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: [DeathChest] Placeholder API expansion has successfully unregistered
+[09:03:21] [Server thread/INFO]: [AuraSkills] Disabling AuraSkills v2.1.1
+[09:03:21] [Server thread/INFO]: [RealRegions] Disabling RealRegions v0.7
+[09:03:21] [Server thread/INFO]: [FancyHolograms] Disabling FancyHolograms v2.3.1
+[09:03:21] [Server thread/INFO]: [VeinMiner] Disabling VeinMiner v2.2.4
+[09:03:21] [Server thread/INFO]: [VeinMiner] Clearing localized data
+[09:03:21] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v7.0
+[09:03:21] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[09:03:21] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 7.0
+[09:03:21] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.0.2
+[09:03:21] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.10
+[09:03:21] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.12
+[09:03:21] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.0+6678-55745ad
+[09:03:21] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[09:03:21] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[09:03:21] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.0.2
+[09:03:21] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[09:03:21] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[09:03:21] [Server thread/INFO]: Saving players
+[09:03:21] [Server thread/INFO]: Saving worlds
+[09:03:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[09:03:21] [DimensionDataIO - ./world - 0/ERROR]: Could not save data net.minecraft.world.scores.ScoreboardSaveData@2c80d55
+java.nio.file.NoSuchFileException: ./world/data/scoreboard.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [DimensionDataIO - ./world - 0/ERROR]: Could not save data net.minecraft.world.entity.raid.Raids@6f789d4
+java.nio.file.NoSuchFileException: ./world/data/raids.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 6 entity chunks, 0 poi chunks in world 'world' in 0.04s
+[09:03:21] [Server thread/ERROR]: Failed to save level ./world
+java.nio.file.NoSuchFileException: ./world/level11942657464325887602.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:657) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.create(TempFileHelper.java:136) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:159) ~[?:?]
+	at java.base/java.nio.file.Files.createTempFile(Files.java:878) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveLevelData(LevelStorageSource.java:615) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:608) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.level.ServerLevel.save(ServerLevel.java:1432) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.saveAllChunks(MinecraftServer.java:962) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1085) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[09:03:21] [DimensionDataIO - ./world_nether/DIM-1 - 0/ERROR]: Could not save data net.minecraft.world.entity.raid.Raids@a9cbc59
+java.nio.file.NoSuchFileException: ./world_nether/DIM-1/data/raids.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[09:03:21] [Server thread/ERROR]: Failed to save level ./world_nether
+java.nio.file.NoSuchFileException: ./world_nether/level16867420061922306691.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:657) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.create(TempFileHelper.java:136) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:159) ~[?:?]
+	at java.base/java.nio.file.Files.createTempFile(Files.java:878) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveLevelData(LevelStorageSource.java:615) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:608) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.level.ServerLevel.save(ServerLevel.java:1432) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.saveAllChunks(MinecraftServer.java:962) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1085) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[09:03:21] [DimensionDataIO - ./world_the_end/DIM1 - 0/ERROR]: Could not save data net.minecraft.world.entity.raid.Raids@489c83e0
+java.nio.file.NoSuchFileException: ./world_the_end/DIM1/data/raids_end.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482) ~[?:?]
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227) ~[?:?]
+	at net.minecraft.nbt.NbtIo.writeCompressed(NbtIo.java:168) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.saveddata.SavedData.lambda$save$0(SavedData.java:48) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[09:03:21] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.05s
+[09:03:22] [Server thread/ERROR]: Failed to save level ./world_the_end
+java.nio.file.NoSuchFileException: ./world_the_end/level17003382570025599228.dat
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.createFile(Files.java:657) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.create(TempFileHelper.java:136) ~[?:?]
+	at java.base/java.nio.file.TempFileHelper.createTempFile(TempFileHelper.java:159) ~[?:?]
+	at java.base/java.nio.file.Files.createTempFile(Files.java:878) ~[?:?]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveLevelData(LevelStorageSource.java:615) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:608) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.level.ServerLevel.save(ServerLevel.java:1432) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.saveAllChunks(MinecraftServer.java:962) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:1085) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.stopServer(DedicatedServer.java:845) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1349) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[09:03:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09:03:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09:03:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09:03:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
