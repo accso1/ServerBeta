@@ -1,0 +1,578 @@
+[08:56:16] [ServerMain/ERROR]: [DirectoryProviderSource] Error preparing plugin context: Directory 'plugins/MiniPlaceholders-Velocity-2.2.4.jar' failed to update!
+java.lang.RuntimeException: Directory 'plugins/MiniPlaceholders-Velocity-2.2.4.jar' failed to update!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:57) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$prepareContext$1(DirectoryProviderSource.java:33) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.walkFiles(DirectoryProviderSource.java:64) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:31) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:109) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.Main.main(Main.java:122) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.Main.main(Main.java:298) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/MiniPlaceholders-Velocity-2.2.4.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:120) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:55) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	... 21 more
+Caused by: java.lang.IllegalArgumentException: plugins/MiniPlaceholders-Velocity-2.2.4.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:129) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:101) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:55) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	... 21 more
+[08:56:16] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/ServerBooster_1.1.8.jar'...
+[08:56:16] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins/EliteMobs.jar'...
+[08:56:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/deathchest.jar'...
+[08:56:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/deathchest.jar' in 451ms.
+[08:56:19] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins/EliteMobs.jar' in 2711ms.
+[08:56:19] [ServerMain/ERROR]: [PluginRemapper] Encountered exception remapping plugins
+java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to remap plugin jar 'plugins/ServerBooster_1.1.8.jar'
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:649) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Failed to remap plugin jar 'plugins/ServerBooster_1.1.8.jar'
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:358) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.lang.RuntimeException: Failed to execute task dev/lone/serverbooster/main/a
+	at net.neoforged.art.internal.AsyncHelper.invokeAll(AsyncHelper.java:56) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.consumeAll(AsyncHelper.java:36) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:177) ~[paper-1.21.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:95) ~[paper-1.21.jar:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:355) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Duplicate key a (attempted merging values private final dev/lone/serverbooster/main/a/a Ljava/util/HashSet; and default dev/lone/serverbooster/main/a/a Lorg/bukkit/plugin/Plugin;)
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.neoforged.art.internal.AsyncHelper.invokeAll(AsyncHelper.java:52) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.consumeAll(AsyncHelper.java:36) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:177) ~[paper-1.21.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:95) ~[paper-1.21.jar:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:355) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.lang.IllegalStateException: Duplicate key a (attempted merging values private final dev/lone/serverbooster/main/a/a Ljava/util/HashSet; and default dev/lone/serverbooster/main/a/a Lorg/bukkit/plugin/Plugin;)
+	at java.base/java.util.stream.Collectors.duplicateKeyException(Collectors.java:135) ~[?:?]
+	at java.base/java.util.stream.Collectors.lambda$uniqKeysMapAccumulator$1(Collectors.java:182) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at net.neoforged.art.internal.ClassProviderImpl$ClassInfo.<init>(ClassProviderImpl.java:122) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.ClassProviderBuilderImpl.lambda$addClass$1(ClassProviderBuilderImpl.java:64) ~[AutoRenamingTool-2.0.3.jar:?]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[?:?]
+	at net.neoforged.art.internal.ClassProviderBuilderImpl.addClass(ClassProviderBuilderImpl.java:64) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.lambda$run$2(RenamerImpl.java:178) ~[paper-1.21.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.lambda$null$0(AsyncHelper.java:33) ~[AutoRenamingTool-2.0.3.jar:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	... 3 more
+[08:56:23] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[08:56:25] [ServerMain/INFO]: Loaded 1290 recipes
+[08:56:25] [ServerMain/INFO]: Loaded 1399 advancements
+[08:56:25] [Server thread/INFO]: Starting minecraft server version 1.21
+[08:56:25] [Server thread/INFO]: Loading properties
+[08:56:25] [Server thread/INFO]: This server is running Paper version 1.21-91-master@3c8a7fe (2024-07-18T11:41:25Z) (Implementing API version 1.21-R0.1-SNAPSHOT)
+[08:56:26] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[08:56:26] [Server thread/INFO]: Using 4 threads for Netty based IO
+[08:56:26] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[08:56:26] [Server thread/INFO]: Default game type: SURVIVAL
+[08:56:26] [Server thread/INFO]: Generating keypair
+[08:56:26] [Server thread/INFO]: Starting Minecraft server on *:25565
+[08:56:26] [Server thread/INFO]: Using epoll channel type
+[08:56:26] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[08:56:26] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[08:56:27] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loading 3 libraries... please wait
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-api/4.14.0/adventure-api-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-key/4.14.0/adventure-key-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-gson/4.14.0/adventure-text-serializer-gson-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-json/4.14.0/adventure-text-serializer-json-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.0/adventure-text-serializer-bungeecord-4.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [ModelEngine] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-legacy/4.13.0/adventure-text-serializer-legacy-4.13.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loading 8 libraries... please wait
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/inject/guice/7.0.0/guice-7.0.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/cloud/commandframework/cloud-core/1.7.1/cloud-core-1.7.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/cloud/commandframework/cloud-services/1.7.1/cloud-services-1.7.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/io/leangen/geantyref/geantyref/1.3.13/geantyref-1.3.13.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/checkerframework/checker-qual/3.22.1/checker-qual-3.22.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/cloud/commandframework/cloud-bukkit/1.7.1/cloud-bukkit-1.7.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/cloud/commandframework/cloud-brigadier/1.7.1/cloud-brigadier-1.7.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/cloud/commandframework/cloud-tasks/1.7.1/cloud-tasks-1.7.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-bukkit/4.3.0/adventure-platform-bukkit-4.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-api/4.3.0/adventure-platform-api-4.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.0/adventure-text-serializer-bungeecord-4.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-nbt/4.13.0/adventure-nbt-4.13.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/jetbrains/annotations/24.0.1/annotations-24.0.1.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-gson/4.13.0/adventure-text-serializer-gson-4.13.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.0/adventure-text-serializer-gson-legacy-impl-4.13.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-facet/4.3.0/adventure-platform-facet-4.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-viaversion/4.3.0/adventure-platform-viaversion-4.3.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-minimessage/4.14.0/adventure-text-minimessage-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-api/4.14.0/adventure-api-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-key/4.14.0/adventure-key-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-legacy/4.14.0/adventure-text-serializer-legacy-4.14.0.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/bstats/bstats-bukkit/3.0.2/bstats-bukkit-3.0.2.jar
+[08:56:28] [Server thread/INFO]: [SpigotLibraryLoader] [DeathChest] Loaded library /workspaces/ServerBeta/libraries/org/bstats/bstats-base/3.0.2/bstats-base-3.0.2.jar
+[08:56:30] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'Shopkeepers-2.20.1.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: Exception initializing main class `com.nisovin.shopkeepers.SKShopkeepersPlugin'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:106) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:544) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:290) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:98) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+Caused by: java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/nisovin/shopkeepers/shopobjects/living/types/ZombieVillagerShop.cycleProfession(Z)V @8: invokestatic
+  Reason:
+    Type 'org/bukkit/entity/Villager$Profession' (current frame, stack[2]) is not assignable to 'java/lang/Enum'
+  Current Frame:
+    bci: @8
+    flags: { }
+    locals: { 'com/nisovin/shopkeepers/shopobjects/living/types/ZombieVillagerShop', integer }
+    stack: { 'com/nisovin/shopkeepers/shopobjects/living/types/ZombieVillagerShop', 'java/lang/Class', 'org/bukkit/entity/Villager$Profession', integer }
+  Bytecode:
+    0000000: 2a12 092a b600 981b b800 9ec0 0009 b600
+    0000010: a0b1                                   
+
+	at Shopkeepers-2.20.1.jar/com.nisovin.shopkeepers.shopobjects.living.SKLivingShopObjectTypes.createLivingShopObjectType(SKLivingShopObjectTypes.java:405) ~[Shopkeepers-2.20.1.jar:?]
+	at Shopkeepers-2.20.1.jar/com.nisovin.shopkeepers.shopobjects.living.SKLivingShopObjectTypes.createShopObjectTypes(SKLivingShopObjectTypes.java:250) ~[Shopkeepers-2.20.1.jar:?]
+	at Shopkeepers-2.20.1.jar/com.nisovin.shopkeepers.shopobjects.living.SKLivingShopObjectTypes.<init>(SKLivingShopObjectTypes.java:241) ~[Shopkeepers-2.20.1.jar:?]
+	at Shopkeepers-2.20.1.jar/com.nisovin.shopkeepers.shopobjects.living.LivingShops.<init>(LivingShops.java:62) ~[Shopkeepers-2.20.1.jar:?]
+	at Shopkeepers-2.20.1.jar/com.nisovin.shopkeepers.SKShopkeepersPlugin.<init>(SKShopkeepersPlugin.java:156) ~[Shopkeepers-2.20.1.jar:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:98) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loading 12 libraries... please wait
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/springframework/spring-expression/6.0.6/spring-expression-6.0.6.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/springframework/spring-core/6.0.6/spring-core-6.0.6.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/springframework/spring-jcl/6.0.6/spring-jcl-6.0.6.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/commons-codec/commons-codec/1.11/commons-codec-1.11.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-minimessage/4.17.0/adventure-text-minimessage-4.17.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-api/4.17.0/adventure-api-4.17.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-plain/4.17.0/adventure-text-serializer-plain-4.17.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-ansi/4.17.0/adventure-text-serializer-ansi-4.17.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/ansi/1.0.3/ansi-1.0.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-bukkit/4.3.3/adventure-platform-bukkit-4.3.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-api/4.3.3/adventure-platform-api-4.3.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.3/adventure-text-serializer-bungeecord-4.3.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-gson/4.13.1/adventure-text-serializer-gson-4.13.1.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-facet/4.3.3/adventure-platform-facet-4.3.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-platform-viaversion/4.3.3/adventure-platform-viaversion-4.3.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/team/unnamed/creative-api/1.7.3/creative-api-1.7.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/net/kyori/adventure-key/4.9.3/adventure-key-4.9.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/org/jetbrains/annotations/23.1.0/annotations-23.1.0.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/team/unnamed/creative-serializer-minecraft/1.7.3/creative-serializer-minecraft-1.7.3.jar
+[08:56:30] [Server thread/INFO]: [SpigotLibraryLoader] [Oraxen] Loaded library /workspaces/ServerBeta/libraries/gs/mclo/java/2.2.1/java-2.2.1.jar
+[08:56:30] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'oraxen-1.179.0.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/comphenix/protocol/events/PacketListener
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:129) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:544) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:290) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NoClassDefFoundError: com/comphenix/protocol/events/PacketListener
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: com.comphenix.protocol.events.PacketListener
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	... 9 more
+[08:56:30] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
+[08:56:30] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.0.2
+[08:56:30] [Server thread/INFO]: [ViaVersion] ViaVersion 5.0.2 is now loaded. Registering protocol transformers and injecting...
+[08:56:31] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[08:56:31] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[08:56:32] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[08:56:32] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[08:56:33] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[08:56:33] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.0+6678-55745ad
+[08:56:34] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@7a2f6f2c]
+[08:56:34] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.12
+[08:56:34] [Server thread/INFO]: [ModelEngine] Loading server plugin ModelEngine vR4.0.6.1
+[08:56:34] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.10
+[08:56:34] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.0.2
+[08:56:34] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v7.0
+[08:56:34] [Server thread/INFO]: [VeinMiner] Loading server plugin VeinMiner v2.2.4
+[08:56:35] [Server thread/INFO]: [FancyHolograms] Loading server plugin FancyHolograms v2.3.1
+[08:56:35] [Server thread/INFO]: [RealRegions] Loading server plugin RealRegions v0.7
+[08:56:35] [Server thread/INFO]: [AuraSkills] Loading server plugin AuraSkills v2.1.1
+[08:56:35] [Server thread/INFO]: [DeathChest] Loading server plugin DeathChest v2.2.5
+[08:56:35] [Server thread/INFO]: [Vulcan] Loading server plugin Vulcan v2.8.3
+[08:56:35] [Server thread/ERROR]: [Vulcan] Error initializing plugin 'Vulcan-2.8.3.jar' in folder 'plugins/.paper-remapped' (Is it up to date?)
+java.lang.ExceptionInInitializerError: null
+	at Vulcan-2.8.3.jar/io.github.repooper.packetevents.Vulcan_k7.<init>(Vulcan_k7.java:31) ~[Vulcan-2.8.3.jar:?]
+	at Vulcan-2.8.3.jar/io.github.repooper.packetevents.Vulcan_aa.<init>(Vulcan_aa.java:69) ~[Vulcan-2.8.3.jar:?]
+	at Vulcan-2.8.3.jar/io.github.repooper.packetevents.Vulcan_aa.Vulcan_y(Vulcan_aa.java:81) ~[Vulcan-2.8.3.jar:?]
+	at Vulcan-2.8.3.jar/me.frep.vulcan.spigot.VulcanPlugin.onLoad(VulcanPlugin.java:12) ~[Vulcan-2.8.3.jar:?]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:544) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:290) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at Vulcan-2.8.3.jar/io.github.repooper.packetevents.Vulcan_eP.<clinit>(Vulcan_eP.java:54) ~[Vulcan-2.8.3.jar:?]
+	... 13 more
+[08:56:35] [Server thread/INFO]: [ToolStats] Loading server plugin ToolStats v1.7.2
+[08:56:35] [Server thread/INFO]: [EliteMobs] Loading server plugin EliteMobs v8.5.2
+[08:56:35] [Server thread/WARN]: [EliteMobs] Error loading WorldGuard. EliteMob-specific flags will not work. Except if you just reloaded the plugin, in which case they will totally work.
+[08:56:35] [Server thread/INFO]: [Multiverse-Portals] Loading server plugin Multiverse-Portals v4.2.3
+[08:56:35] [Server thread/INFO]: [PowerRanks] Loading server plugin PowerRanks v1.10.9R2
+[08:56:35] [Server thread/INFO]: [SmoothTimber] Loading server plugin SmoothTimber v1.27.0
+[08:56:35] [Server thread/INFO]: [ChunkyBorder] Loading server plugin ChunkyBorder v1.2.13
+[08:56:35] [Server thread/INFO]: [Multiverse-SignPortals] Loading server plugin Multiverse-SignPortals v4.2.2
+[08:56:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[08:56:35] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
+[08:56:35] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
+[08:56:35] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.0+6678-55745ad
+[08:56:35] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[08:56:35] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[08:56:35] [Server thread/WARN]: 
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for entity
+** and block property-related functions.
+**
+** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
+**********************************************
+
+[08:56:36] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR4.0.6.1
+[08:56:36] [Server thread/ERROR]: Error occurred while enabling ModelEngine vR4.0.6.1 (Is it up to date?)
+java.lang.ExceptionInInitializerError: null
+	at ModelEngine-4.0.6.1F.jar/com.ticxo.modelengine.core.ModelEngine.configureNMSHandler(ModelEngine.java:265) ~[ModelEngine-4.0.6.1F.jar:?]
+	at ModelEngine-4.0.6.1F.jar/com.ticxo.modelengine.core.ModelEngine.onEnable(ModelEngine.java:100) ~[ModelEngine-4.0.6.1F.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:638) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:587) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:291) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at ModelEngine-4.0.6.1F.jar/com.ticxo.modelengine.api.ServerInfo.<clinit>(ServerInfo.java:21) ~[ModelEngine-4.0.6.1F.jar:?]
+	... 12 more
+[08:56:36] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR4.0.6.1
+[08:56:36] [Server thread/ERROR]: Error occurred while disabling ModelEngine vR4.0.6.1
+java.lang.NullPointerException: Cannot invoke "com.ticxo.modelengine.api.utils.ticker.DualTicker.stop()" because "this.ticker" is null
+	at ModelEngine-4.0.6.1F.jar/com.ticxo.modelengine.core.ModelEngine.onDisable(ModelEngine.java:128) ~[ModelEngine-4.0.6.1F.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:114) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:550) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:206) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:638) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:587) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:291) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[08:56:36] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
+[08:56:36] [Server thread/INFO]: [PowerRanks] Setting up file: config.yml
+[08:56:36] [Server thread/INFO]: [PowerRanks] 
+[08:56:36] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
+[08:56:36] [Server thread/INFO]: [PowerRanks] Loading config file
+[08:56:37] [Server thread/INFO]: [PowerRanks] Loading language file
+[08:56:37] [Server thread/INFO]: [PowerRanks] Loading usertags file
+[08:56:37] [Server thread/INFO]: [PowerRanks] Loading tablist file
+[08:56:37] [Server thread/INFO]: [PowerRanks] 
+[08:56:37] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
+[08:56:37] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
+[08:56:37] [Server thread/INFO]: [PowerRanks] 
+[08:56:37] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
+[08:56:37] [Server thread/INFO]: [PowerRanks] Loading player & rank data
+[08:56:38] [Server thread/INFO]: [PowerRanks] 
+[08:56:38] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
+[08:56:38] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
+[08:56:38] [Server thread/INFO]: [PowerRanks] PlaceholderAPI found!
+[08:56:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: powerranks [1.10.9R2]
+[08:56:38] [Server thread/INFO]: [PowerRanks] 
+[08:56:38] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  PowerRanks v1.10.9R2
+[08:56:38] [Server thread/INFO]: [PowerRanks] §b  ██   ██ ██   ██§a  Running on 91 v1.21
+[08:56:38] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  Startup time: 1923ms
+[08:56:38] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§a  Loaded 4 ranks and 0 players (YAML) 
+[08:56:38] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§c  
+[08:56:38] [Server thread/INFO]: [PowerRanks] 
+[08:56:38] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
+[08:56:38] [Server thread/INFO]: [PowerRanks] Checking for updates...
+[08:56:38] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08:56:38] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[08:56:38] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08:56:38] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[08:56:38] [Server thread/INFO]: Preparing level "world"
+[08:56:39] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[08:56:40] [Server thread/INFO]: Time elapsed: 1058 ms
+[08:56:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[08:56:40] [Server thread/INFO]: Time elapsed: 205 ms
+[08:56:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[08:56:40] [Server thread/INFO]: Time elapsed: 143 ms
+[08:56:40] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.0.2
+[08:56:40] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21 (767)
+[08:56:40] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[08:56:40] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[08:56:40] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.12
+[08:56:40] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.12" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[08:56:40] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[08:56:41] [Server thread/INFO]: [Multiverse-Core] 3 - World(s) loaded.
+[08:56:41] [Server thread/WARN]: [Multiverse-Core] The world specified as the spawn world (lobby) did not exist!!
+[08:56:41] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[08:56:41] [Server thread/INFO]: [Multiverse-Core] Version 4.3.12 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[08:56:41] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.10
+[08:56:41] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.0.2
+[08:56:41] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v7.0
+[08:56:41] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[08:56:41] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 7.0
+[08:56:41] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[08:56:41] [Server thread/INFO]: [VeinMiner] Enabling VeinMiner v2.2.4
+[08:56:41] [Server thread/INFO]: [VeinMiner] Loading configuration options to local memory
+[08:56:41] [Server thread/INFO]: [VeinMiner] Added 13 aliases.
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registered category with id "Axe" holding 6 unique items and 26 unique blocks.
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registered category with id "Hoe" holding 6 unique items and 10 unique blocks.
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registered category with id "Pickaxe" holding 6 unique items and 23 unique blocks.
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registered category with id "Shears" holding 1 unique items and 27 unique blocks.
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registered category with id "Shovel" holding 6 unique items and 10 unique blocks.
+[08:56:41] [Server thread/WARN]: [VeinMiner] No block list configured for category with id "Hand"! Is this intentional?
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registered category with id "Hand" holding 0 unique items and 0 unique blocks.
+[08:56:41] [Server thread/INFO]: [VeinMiner] Performing an update check!
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registering commands
+[08:56:41] [Server thread/INFO]: [VeinMiner] Registering events
+[08:56:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: veinminer [2.2.4]
+[08:56:41] [Server thread/INFO]: [VeinMiner] Vault not found. Economy support suspended
+[08:56:41] [Server thread/INFO]: [VeinMiner] Enabling Plugin Metrics
+[08:56:41] [Server thread/INFO]: [VeinMiner] Thanks for enabling Metrics! The anonymous stats are appreciated
+[08:56:41] [Server thread/INFO]: [FancyHolograms] Enabling FancyHolograms v2.3.1
+[08:56:41] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] Using SQLITE for persistent storage.
+[08:56:41] [Server thread/INFO]: [RealRegions] Enabling RealRegions v0.7
+[08:56:41] [FancyHolograms-Holograms/INFO]: [FancyHolograms] Loaded 0 holograms for all loaded worlds
+[08:56:41] [Server thread/INFO]: [RealRegions]  ______           _______           _      
+[08:56:41] [Server thread/INFO]: [RealRegions]  | ___ \         | | ___ \         (_)  
+[08:56:41] [Server thread/INFO]: [RealRegions]  | |_/ /___  __ _| | |_/ /___  __ _ _  ___  _ __  ___ 
+[08:56:41] [Server thread/INFO]: [RealRegions]  |    // _ \/ _` | |    // _ \/ _` | |/ _ \| '_ \/ __|
+[08:56:41] [Server thread/INFO]: [RealRegions]  | |\ \  __/ (_| | | |\ \  __/ (_| | | (_) | | | \__ \
+[08:56:41] [Server thread/INFO]: [RealRegions]  \_| \_\___|\__,_|_\_| \_\___|\__, |_|\___/|_| |_|___/
+[08:56:41] [Server thread/INFO]: [RealRegions]   Made by: JoseGamer_PT        __/ |   Version: 0.7
+[08:56:41] [Server thread/INFO]: [RealRegions]                               |___/
+[08:56:41] [Server thread/INFO]: [RealRegions] 
+[08:56:41] [ForkJoinPool.commonPool-worker-1/INFO]: [VeinMiner] You are on the latest version of VeinMiner.
+[08:56:42] [Server thread/INFO]: [RealRegions] Loaded 3 worlds and 3 regions.
+[08:56:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: RealRegions [0.7]
+[08:56:42] [Server thread/INFO]: [RealRegions] Finished loading in 0.601 seconds.
+[08:56:42] [Server thread/INFO]: [RealRegions] <------------------ RealRegions v0.7 ------------------>
+[08:56:42] [Server thread/INFO]: [AuraSkills] Enabling AuraSkills v2.1.1
+[08:56:43] [Server thread/INFO]: [AuraSkills] Loaded 21 message files
+[08:56:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: auraskills [2.1.1]
+[08:56:44] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: aureliumskills [2.1.1]
+[08:56:44] [Server thread/INFO]: [AuraSkills] Successfully registered hook PlaceholderAPI
+[08:56:44] [Server thread/INFO]: [AuraSkills] Loaded 113 config options in 93 ms
+[08:56:44] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21! Trying to find NMS support
+[08:56:44] [Server thread/WARN]: [NBTAPI] [NBTAPI] This Server-Version(1.21-R0.1-SNAPSHOT) is not supported by this NBT-API Version(2.12.4) located in AuraSkills. The NBT-API will try to work as good as it can! Some functions may not work!
+[08:56:44] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AuraSkills' to create a bStats instance!
+[08:56:44] [Server thread/WARN]: [AuraSkills] NBT API is not yet supported for your Minecraft version, item modifier, requirement, and some other functionality is disabled!
+[08:56:44] [Server thread/INFO]: [AuraSkills] Loaded 3 blocked worlds.
+[08:56:44] [Server thread/INFO]: [AuraSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[08:56:45] [Server thread/INFO]: [DeathChest] Enabling DeathChest v2.2.5
+[08:56:45] [Server thread/INFO]: [DeathChest] 0 death chests loaded in world "world"
+[08:56:45] [Server thread/INFO]: [DeathChest]   Of these 0 have expired
+[08:56:45] [Server thread/INFO]: [DeathChest] 0 death chests loaded in world "world_nether"
+[08:56:45] [Server thread/INFO]: [DeathChest]   Of these 0 have expired
+[08:56:45] [Server thread/INFO]: [DeathChest] 0 death chests loaded in world "world_the_end"
+[08:56:45] [Server thread/INFO]: [DeathChest]   Of these 0 have expired
+[08:56:45] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: DeathChest [2.2.5]
+[08:56:45] [Server thread/INFO]: [Vulcan] Enabling Vulcan v2.8.3
+[08:56:46] [Server thread/ERROR]: Error occurred while enabling Vulcan v2.8.3 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "io.github.repooper.packetevents.Vulcan_aa.Vulcan_Q()" because the return value of "io.github.repooper.packetevents.Vulcan_aa.Vulcan_m()" is null
+	at Vulcan-2.8.3.jar/me.frep.vulcan.spigot.VulcanPlugin.onEnable(VulcanPlugin.java:20) ~[Vulcan-2.8.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:638) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:587) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:753) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:515) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:327) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[08:56:46] [Server thread/INFO]: [Vulcan] Disabling Vulcan v2.8.3
+[08:56:46] [Server thread/ERROR]: Error occurred while disabling Vulcan v2.8.3
+java.lang.NullPointerException: Cannot invoke "io.github.repooper.packetevents.Vulcan_aa.Vulcan_t()" because the return value of "io.github.repooper.packetevents.Vulcan_aa.Vulcan_m()" is null
+	at Vulcan-2.8.3.jar/me.frep.vulcan.spigot.VulcanPlugin.onDisable(VulcanPlugin.java:27) ~[Vulcan-2.8.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:291) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:114) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:550) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:206) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:638) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:587) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:753) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:515) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:327) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[08:56:46] [Server thread/INFO]: [ToolStats] Enabling ToolStats v1.7.2
+[08:56:46] [Server thread/INFO]: [EliteMobs] Enabling EliteMobs v8.5.2
+[08:56:46] [Server thread/INFO]:  _____ _     _____ _____ ________  ______________  _____
+[08:56:46] [Server thread/INFO]: |  ___| |   |_   _|_   _|  ___|  \/  |  _  | ___ \/  ___|
+[08:56:46] [Server thread/INFO]: | |__ | |     | |   | | | |__ | .  . | | | | |_/ /\ `--.
+[08:56:46] [Server thread/INFO]: |  __|| |     | |   | | |  __|| |\/| | | | | ___ \ `--. \
+[08:56:46] [Server thread/INFO]: | |___| |_____| |_  | | | |___| |  | \ \_/ / |_/ //\__/ /
+[08:56:46] [Server thread/INFO]: \____/\_____/\___/  \_/ \____/\_|  |_/\___/\____/ \____/
+[08:56:46] [Server thread/INFO]: By MagmaGuy - v. 8.5.2
+[08:56:46] [Server thread/ERROR]: Error occurred while enabling EliteMobs v8.5.2 (Is it up to date?)
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at EliteMobs.jar/com.magmaguy.easyminecraftgoals.NMSManager.getServerVersion(NMSManager.java:41) ~[EliteMobs.jar:?]
+	at EliteMobs.jar/com.magmaguy.easyminecraftgoals.NMSManager.initializeAdapter(NMSManager.java:20) ~[EliteMobs.jar:?]
+	at EliteMobs.jar/com.magmaguy.elitemobs.EliteMobs.onEnable(EliteMobs.java:149) ~[EliteMobs.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:638) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:587) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:753) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:515) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:327) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1211) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-91-3c8a7fe]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[08:56:46] [Server thread/INFO]: [EliteMobs] Disabling EliteMobs v8.5.2
+[08:56:46] [Server thread/INFO]: [EliteMobs] Starting EliteMobs shutdown sequence...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Regenerating exploded blocks...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Cancelling tasks...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Closing wormholes...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Spinning Regional Bosses down...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Wiping Elite entities clean...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing events...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing valid worlds...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing zone based worlds...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing config regional elites...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing custom enchantments...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing custom items...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing Minidungeons...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Unregistering placeholders...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Unregistering handlers...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Clearing Treasure Chests...
+[08:56:46] [Server thread/INFO]: [EliteMobs] Untracking quests...
+[08:56:47] [Server thread/INFO]: [EliteMobs] Saving EliteMobs databases...
+[08:56:47] [Server thread/INFO]: [EliteMobs] All done! Good night.
+[08:56:47] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v4.2.3
+[08:56:47] [Server thread/INFO]: [Multiverse-Portals] 0 - Portals(s) loaded
+[08:56:47] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+[08:56:47] [Server thread/INFO]: [Multiverse-Portals 4.2.3]  Enabled - By Rigby and fernferret
+[08:56:47] [Server thread/INFO]: [SmoothTimber] Enabling SmoothTimber v1.27.0
+[08:56:47] [Server thread/INFO]: SmoothTimber || You're currently using the untested Minecraft Version 1.21 (Core v1_20x)
+[08:56:47] [Server thread/INFO]: SmoothTimber || Please note that this core only officially supports 1.20, 1.20.1, 1.20.2, 1.20.3, 1.20.4, so problems may occur.
+[08:56:47] [Server thread/INFO]: SmoothTimber || Trying to enable compatibility addon 'PlaceholderApi' for plugin 'PlaceholderAPI'...
+[08:56:47] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: smoothtimber [1.27.0]
+[08:56:47] [Server thread/INFO]: SmoothTimber || Successfully enabled compatbility addon 'PlaceholderApi' for plugin 'PlaceholderAPI'...
+[08:56:47] [Server thread/INFO]: [ChunkyBorder] Enabling ChunkyBorder v1.2.13
+[08:56:47] [Server thread/INFO]: [Multiverse-SignPortals] Enabling Multiverse-SignPortals v4.2.2
+[08:56:47] [Server thread/INFO]: [Multiverse-SignPortals 4.2.2]  Enabled - By Rigby and fernferret
+[08:56:47] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[08:56:47] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[08:56:47] [Server thread/INFO]: Running delayed init tasks
+[08:56:47] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor!
+[08:56:47] [Craft Scheduler Thread - 0 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available.
+[08:56:47] [Craft Scheduler Thread - 0 - SimpleTpa/INFO]: [SimpleTpa] There is a new update available:
+[08:56:47] [Craft Scheduler Thread - 0 - SimpleTpa/INFO]: [SimpleTpa] https://www.spigotmc.org/resources/simple-tpa.64270/
+[08:56:47] [Server thread/INFO]: [AuraSkills] Loaded 11 skills with 308 total sources
+[08:56:47] [Server thread/INFO]: [AuraSkills] Loaded 9 stats and 17 traits
+[08:56:48] [Server thread/INFO]: [AuraSkills] Loaded 22 pattern rewards and 0 level rewards
+[08:56:48] [Craft Scheduler Thread - 5 - ToolStats/WARN]: [ToolStats] A new version is available (1.7.3)! You are running version 1.7.2. You are 1 version(s) behind.
+[08:56:48] [Server thread/INFO]: [AuraSkills] Loaded 53 loot entries in 4 pools and 2 tables
+[08:56:48] [Craft Scheduler Thread - 2 - RealRegions/INFO]: [RealRegions] The plugin is updated to the latest version.
+[08:56:48] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[08:56:48] [Server thread/INFO]: [AuraSkills] Loaded 6 menus
+[08:56:48] [Server thread/INFO]: Done (22.794s)! For help, type "help"
+[08:56:48] [Server thread/INFO]: Timings Reset
